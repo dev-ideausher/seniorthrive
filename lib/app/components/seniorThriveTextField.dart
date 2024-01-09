@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:seniorthrive/app/services/colors.dart';
 import 'package:seniorthrive/app/services/responsive_size.dart';
 
 import '../services/text_style_util.dart';
-import 'common_image_view.dart';
 
 class seniorThriveTextField extends StatelessWidget {
   final TextEditingController? controller;
   final String? svgPath;
   final bool obscureText;
+  final String? Function(String?)? validator;
   final String? imagePath;
   final Widget? suffixIcon;
+  final Widget? prefixIcon;
+  final String? hintText;
+  final TextStyle? hintStyle;
   const seniorThriveTextField({
     super.key,
     this.controller,
@@ -19,20 +21,31 @@ class seniorThriveTextField extends StatelessWidget {
     this.imagePath,
     this.obscureText = false,
     this.suffixIcon,
+    this.validator,
+    this.hintText,
+    this.hintStyle,
+    this.prefixIcon,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
+      validator: validator,
       style: TextStyleUtil.genSans400(fontSize: 16.kh, color: Colors.black),
       obscureText: obscureText,
+      obscuringCharacter: '*',
       decoration: InputDecoration(
           suffixIcon: suffixIcon,
-          prefixIcon: CommonImageView(
-            svgPath: svgPath,
-            imagePath: imagePath,
-          ).paddingAll(16.kh),
+          hintText: hintText,
+          hintStyle: hintStyle,
+          prefixIcon: prefixIcon,
+          errorBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.red),
+              borderRadius: BorderRadius.circular(16.kw)),
+          focusedErrorBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.red),
+              borderRadius: BorderRadius.circular(16.kw)),
           focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(color: context.orange),
               borderRadius: BorderRadius.circular(16.kw)),

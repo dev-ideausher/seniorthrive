@@ -60,6 +60,18 @@ class TextStyleUtil {
       fontWeight: FontWeight.w700,
     );
   }
+
+  static TextStyle genSans800({
+    Color color = Colors.black,
+    required double fontSize,
+  }) {
+    return TextStyle(
+      fontFamily: 'General Sans',
+      color: color,
+      fontSize: fontSize,
+      fontWeight: FontWeight.w800,
+    );
+  }
 }
 
 extension AppText on String {

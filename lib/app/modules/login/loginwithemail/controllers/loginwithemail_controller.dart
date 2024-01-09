@@ -13,10 +13,6 @@ class LoginwithemailController extends GetxController {
   final currentPageIndex = 0.obs;
   var obscureText = true.obs;
 
-  void togglePasswordVisibility() {
-    obscureText.toggle();
-  }
-
   @override
   void onInit() {
     super.onInit();

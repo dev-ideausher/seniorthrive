@@ -187,11 +187,8 @@ class emailLoginPage extends StatelessWidget {
               svgPath: ImageConstant.svglock,
               obscureText: controller.obscureText.value,
               suffixIcon: GestureDetector(
-                onLongPress: () {
-                  controller.togglePasswordVisibility();
-                },
-                onLongPressUp: () {
-                  controller.togglePasswordVisibility();
+                onTap: () {
+                  controller.obscureText.toggle();
                 },
                 child: CommonImageView(
                   svgPath: ImageConstant.svgeyeslash,
@@ -256,6 +253,9 @@ class emailLoginPage extends StatelessWidget {
                   style: TextStyleUtil.genSans600(
                       fontSize: 16.kh, color: Colors.black)),
               GestureDetector(
+                onTap: () {
+                  Get.toNamed(Routes.CREATEACCOUNT);
+                },
                 child: Text('Create Account',
                     style: TextStyleUtil.genSans600(
                         fontSize: 16.kh, color: context.orange)),

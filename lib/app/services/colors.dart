@@ -24,7 +24,7 @@ extension ColorUtil on BuildContext {
   Color get darkgrey =>
       dynamicColour(light: HexColor("#686868"), dark: HexColor("#000000"));
   Color get indicatorgrey =>
-      dynamicColour(light: HexColor("#C0C0C0"), dark: HexColor("#000000"));
+      dynamicColour(light: HexColor("#C4C4C4"), dark: HexColor("#000000"));
   Color get lightgrey =>
       dynamicColour(light: HexColor("#F4F4F4"), dark: HexColor("#000000"));
   Color get lightGreen =>
@@ -34,6 +34,12 @@ extension ColorUtil on BuildContext {
   Color get peach =>
       dynamicColour(light: HexColor("#E7A98A"), dark: HexColor("#000000"));
 
+  Color get blue =>
+      dynamicColour(light: HexColor("#3662D4"), dark: HexColor("#000000"));
+  Color get lightblue =>
+      dynamicColour(light: HexColor("#EFF3FF"), dark: HexColor("#000000"));
+  Color get pink =>
+      dynamicColour(light: HexColor("#F9AC89"), dark: HexColor("#000000"));
   Color get lavender =>
       dynamicColour(light: HexColor("#D5C2CA"), dark: HexColor("#000000"));
 

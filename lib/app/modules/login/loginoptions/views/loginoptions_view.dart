@@ -90,7 +90,9 @@ class LoginoptionsView extends GetView<LoginoptionsController> {
                               fontWeight: FontWeight.w600, fontSize: 16.kh),
                         ),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Get.toNamed(Routes.CREATEACCOUNT);
+                          },
                           child: Text(
                             'Create Account',
                             style: TextStyle(

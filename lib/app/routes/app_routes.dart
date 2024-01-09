@@ -14,6 +14,11 @@ abstract class Routes {
   static const FORGOTPASSWORD = _Paths.FORGOTPASSWORD;
   static const RESETPASSWORD = _Paths.RESETPASSWORD;
   static const BOTTOMNAVIGATORBAR = _Paths.BOTTOMNAVIGATORBAR;
+  static const CREATEACCOUNT = _Paths.CREATEACCOUNT;
+  static const HOMEPAGE = _Paths.HOMEPAGE;
+  static const RECOMMENDATIONS = _Paths.RECOMMENDATIONS;
+  static const COMMUNITY = _Paths.COMMUNITY;
+  static const SETTINGS = _Paths.SETTINGS;
 }
 
 abstract class _Paths {
@@ -29,4 +34,9 @@ abstract class _Paths {
   static const FORGOTPASSWORD = '/forgotpassword';
   static const RESETPASSWORD = '/resetpassword';
   static const BOTTOMNAVIGATORBAR = '/bottomnavigatorbar';
+  static const CREATEACCOUNT = '/createaccount';
+  static const HOMEPAGE = '/homepage';
+  static const RECOMMENDATIONS = '/recommendations';
+  static const COMMUNITY = '/community';
+  static const SETTINGS = '/settings';
 }

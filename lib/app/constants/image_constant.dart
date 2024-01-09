@@ -4,8 +4,14 @@ class ImageConstant {
   static String svgfacebook = 'assets/images/facebook.svg';
   static String svgapple = 'assets/images/apple.svg';
   static String svghomelogo = 'assets/images/homelogo.svg';
+
+  static String svgvideocam = 'assets/images/videocam.svg';
+  static String svgphotocam = 'assets/images/photocam.svg';
   static String svglock = 'assets/images/lock.svg';
   static String svgeyeslash = 'assets/images/eye-slash.svg';
+  static String svgcommunity = 'assets/images/community.svg';
+
+  static String svgnotification = 'assets/images/notification.svg';
   static String svgemail = 'assets/images/email.svg';
   static String svgemailfilled = 'assets/images/emailfilled.svg';
   static String svgmessage = 'assets/images/message.svg';
@@ -15,10 +21,16 @@ class ImageConstant {
   static String svgnavProfile = 'assets/images/navProfile.svg';
   static String svgusers = 'assets/images/users.svg';
   static String svgnavsettings = 'assets/images/navsettings.svg';
+  static String svgperson = 'assets/images/person.svg';
+  static String svgcalendar = 'assets/images/calendar.svg';
+  static String svgscanmyhome = 'assets/images/scanmyhome.svg';
+  static String svghelpfultips = 'assets/images/helpfultips.svg';
 //PNGs
   static String pngLogo = 'assets/images/logo.png';
-  static String pngsignIn = 'assets/images/signIn.png';
 
+  static String pngScore = 'assets/images/Score.png';
+  static String pngsignIn = 'assets/images/signIn.png';
+  static String pngshadowtick = 'assets/images/shadowtick.png';
   static String pngonmessage = 'assets/images/message.png';
   static String pngonBoarding1 = 'assets/images/onboarding1.png';
   static String pngonBoarding2 = 'assets/images/onboarding2.png';
