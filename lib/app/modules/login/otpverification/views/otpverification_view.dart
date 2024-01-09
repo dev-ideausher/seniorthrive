@@ -47,7 +47,6 @@ class OtpverificationView extends GetView<OtpverificationController> {
                 },
             borderRadius: BorderRadius.circular(16.kw),
             label: 'Submit',
-            style: TextStyleUtil.genSans600(fontSize: 16.kh),
             padding: EdgeInsets.all(16.kh),
           ).paddingSymmetric(vertical: 38.kh),
           Row(

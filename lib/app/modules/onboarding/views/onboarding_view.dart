@@ -31,7 +31,8 @@ class OnboardingView extends GetView<OnboardingController> {
                 },
                 child: Text(
                   'SKIP',
-                  style: TextStyleUtil.genSans400(fontSize: 16.kh),
+                  style: TextStyleUtil.genSans400(
+                      fontSize: 16.kh, color: Colors.white),
                 ))
           ],
         ),
@@ -197,7 +198,8 @@ class onBoarding extends StatelessWidget {
                               label: controller.currentPageIndex.value == 4
                                   ? 'Get Started'
                                   : 'Next',
-                              style: TextStyleUtil.genSans600(fontSize: 16.kh),
+                              style: TextStyleUtil.genSans600(
+                                  fontSize: 16.kh, color: Colors.white),
                               borderRadius: BorderRadius.circular(16.kw)),
                         ],
                       ).paddingOnly(right: 20.kh, left: 20.kw, bottom: 16.kh),

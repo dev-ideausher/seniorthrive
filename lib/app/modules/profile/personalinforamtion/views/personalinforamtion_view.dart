@@ -14,6 +14,7 @@ class PersonalinforamtionView extends GetView<PersonalinforamtionController> {
   const PersonalinforamtionView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    Get.lazyPut(() => PersonalinforamtionController());
     return Scaffold(
         appBar: seniorThriveAppBar(),
         body: Column(
@@ -48,17 +49,41 @@ class PersonalinforamtionView extends GetView<PersonalinforamtionController> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Text('Personal Information',
-                        style: TextStyleUtil.genSans700(
-                            fontSize: 24.kh, color: Colors.black)),
+                    Row(
+                      children: [
+                        Text('Personal Information',
+                            style: TextStyleUtil.genSans700(
+                                fontSize: 24.kh, color: Colors.black)),
+                        IconButton(
+                            onPressed: () {
+                              Get.bottomSheet(personalInforBottomSheet());
+                            },
+                            icon: Icon(
+                              CupertinoIcons.info,
+                              color: context.darkgrey,
+                            ))
+                      ],
+                    ),
                   ],
                 ).paddingSymmetric(horizontal: 16.kw),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Text('Personal Information',
-                        style: TextStyleUtil.genSans700(
-                            fontSize: 24.kh, color: Colors.black)),
+                    Row(
+                      children: [
+                        Text('Personal Information',
+                            style: TextStyleUtil.genSans700(
+                                fontSize: 24.kh, color: Colors.black)),
+                        IconButton(
+                            onPressed: () {
+                              Get.bottomSheet(personalInforBottomSheet());
+                            },
+                            icon: Icon(
+                              CupertinoIcons.info,
+                              color: context.darkgrey,
+                            ))
+                      ],
+                    ),
                   ],
                 ).paddingSymmetric(horizontal: 16.kw)
               ],

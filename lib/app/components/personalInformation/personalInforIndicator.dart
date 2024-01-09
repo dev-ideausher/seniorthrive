@@ -42,7 +42,7 @@ class personalInfoIndicator extends StatelessWidget {
                 width: 50,
                 height: 3,
                 decoration: BoxDecoration(
-                    color: controller.currentPageIndex.value == 1
+                    color: controller.currentPageIndex.value >= 1
                         ? context.green
                         : context.indicatorgrey),
               )

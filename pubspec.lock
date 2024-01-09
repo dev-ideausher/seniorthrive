@@ -105,6 +105,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.1"
+  convex_bottom_bar:
+    dependency: "direct main"
+    description:
+      name: convex_bottom_bar
+      sha256: ebf0f3deb1e8e99374d844fee7485d2980ec502dedfaad395c12118477933aef
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.2.0"
   crypto:
     dependency: "direct main"
     description:
@@ -488,6 +496,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0"
+  motion_tab_bar:
+    dependency: "direct main"
+    description:
+      name: motion_tab_bar
+      sha256: eaa64e9490c431d5fd3846d0e4d0a774ad35b3e4366bd184cbe255c5349f09db
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.3"
   new_version_plus:
     dependency: "direct main"
     description:

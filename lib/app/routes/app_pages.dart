@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/bottomnavigatorbar/bindings/bottomnavigatorbar_binding.dart';
+import '../modules/bottomnavigatorbar/views/bottomnavigatorbar_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/forgotpassword/bindings/forgotpassword_binding.dart';
@@ -71,6 +73,11 @@ class AppPages {
       name: _Paths.RESETPASSWORD,
       page: () => const ResetpasswordView(),
       binding: ResetpasswordBinding(),
+    ),
+    GetPage(
+      name: _Paths.BOTTOMNAVIGATORBAR,
+      page: () => const BottomnavigatorbarView(),
+      binding: BottomnavigatorbarBinding(),
     ),
   ];
 }

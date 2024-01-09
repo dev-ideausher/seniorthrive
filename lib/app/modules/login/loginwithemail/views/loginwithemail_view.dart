@@ -107,7 +107,6 @@ class otpLoginPage extends StatelessWidget {
             },
             borderRadius: BorderRadius.circular(16.kw),
             label: 'Send OTP',
-            style: TextStyleUtil.genSans600(fontSize: 18.kh),
             padding: EdgeInsets.all(16.kh),
           ).paddingOnly(top: 30.kh),
           Row(
@@ -216,10 +215,13 @@ class emailLoginPage extends StatelessWidget {
             ],
           ),
           seniorThiveButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(Routes.BOTTOMNAVIGATORBAR);
+            },
             borderRadius: BorderRadius.circular(16.kw),
             label: 'Login',
-            style: TextStyleUtil.genSans600(fontSize: 18.kh),
+            style:
+                TextStyleUtil.genSans600(fontSize: 18.kh, color: Colors.white),
             padding: EdgeInsets.all(16.kh),
           ),
           Row(

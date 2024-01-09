@@ -9,6 +9,12 @@ class ImageConstant {
   static String svgemail = 'assets/images/email.svg';
   static String svgemailfilled = 'assets/images/emailfilled.svg';
   static String svgmessage = 'assets/images/message.svg';
+  static String svgnavGallery = 'assets/images/navGallery.svg';
+  static String svgnavRecommendations = 'assets/images/navRecommendations.svg';
+  static String svgnavHome = 'assets/images/navHome.svg';
+  static String svgnavProfile = 'assets/images/navProfile.svg';
+  static String svgusers = 'assets/images/users.svg';
+  static String svgnavsettings = 'assets/images/navsettings.svg';
 //PNGs
   static String pngLogo = 'assets/images/logo.png';
   static String pngsignIn = 'assets/images/signIn.png';

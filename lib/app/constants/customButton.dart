@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:seniorthrive/app/components/common_image_view.dart';
 import 'package:seniorthrive/app/services/colors.dart';
+import 'package:seniorthrive/app/services/responsive_size.dart';
+
+import '../services/text_style_util.dart';
 
 class seniorThiveButton extends StatelessWidget {
   final Function() onPressed;
@@ -49,7 +52,9 @@ class seniorThiveButton extends StatelessWidget {
             ),
             Text(
               label!,
-              style: style,
+              style: style ??
+                  TextStyleUtil.genSans600(
+                      fontSize: 16.kh, color: Colors.white),
             ),
           ],
         ));
