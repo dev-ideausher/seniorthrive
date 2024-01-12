@@ -3,10 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:seniorthrive/app/components/common_image_view.dart';
 import 'package:seniorthrive/app/constants/image_constant.dart';
+<<<<<<< HEAD
 import 'package:seniorthrive/app/modules/community/views/community_view.dart';
 import 'package:seniorthrive/app/modules/homepage/views/homepage_view.dart';
 import 'package:seniorthrive/app/modules/recommendations/views/recommendations_view.dart';
 import 'package:seniorthrive/app/modules/settings/views/settings_view.dart';
+=======
+>>>>>>> origin/main
 import 'package:seniorthrive/app/services/responsive_size.dart';
 import 'package:seniorthrive/app/services/text_style_util.dart';
 
@@ -17,6 +20,7 @@ class BottomnavigatorbarView extends GetView<BottomnavigatorbarController> {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     final List<Widget> pages = [
       HomepageView(),
       RecommendationsView(),
@@ -45,6 +49,25 @@ class BottomnavigatorbarView extends GetView<BottomnavigatorbarController> {
       ),
       body: Obx(() => pages[controller.selectedPageIndex.value]),
     );
+=======
+    return Scaffold(
+        bottomNavigationBar: ConvexAppBar.builder(
+      count: 4,
+      backgroundColor: Colors.white,
+      height: 60.kh,
+      itemBuilder: Builder(label: [
+        'Home',
+        'Recommendations',
+        'Community',
+        'Settings'
+      ], svgPath: [
+        ImageConstant.svgnavHome,
+        ImageConstant.svgnavRecommendations,
+        ImageConstant.svgusers,
+        ImageConstant.svgnavsettings
+      ]),
+    ));
+>>>>>>> origin/main
   }
 }
 
