@@ -19,6 +19,9 @@ abstract class Routes {
   static const RECOMMENDATIONS = _Paths.RECOMMENDATIONS;
   static const COMMUNITY = _Paths.COMMUNITY;
   static const SETTINGS = _Paths.SETTINGS;
+
+  static const PREVIEWVIDEO = _Paths.HOMEPAGE + _Paths.PREVIEWVIDEO;
+  static const SCANRESULTS = _Paths.HOMEPAGE + _Paths.SCANRESULTS;
 }
 
 abstract class _Paths {
@@ -39,4 +42,6 @@ abstract class _Paths {
   static const RECOMMENDATIONS = '/recommendations';
   static const COMMUNITY = '/community';
   static const SETTINGS = '/settings';
+  static const PREVIEWVIDEO = '/previewvideo';
+  static const SCANRESULTS = '/scanresults';
 }

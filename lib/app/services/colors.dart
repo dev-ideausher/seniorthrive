@@ -18,6 +18,8 @@ extension ColorUtil on BuildContext {
 
   Color get green =>
       dynamicColour(light: HexColor("#76C554"), dark: HexColor("#000000"));
+  Color get olivegreen =>
+      dynamicColour(light: HexColor("#71974C"), dark: HexColor("#000000"));
   Color get grey =>
       dynamicColour(light: HexColor("#C0C0C0"), dark: HexColor("#000000"));
 
@@ -42,7 +44,8 @@ extension ColorUtil on BuildContext {
       dynamicColour(light: HexColor("#F9AC89"), dark: HexColor("#000000"));
   Color get lavender =>
       dynamicColour(light: HexColor("#D5C2CA"), dark: HexColor("#000000"));
-
+  Color get greyText =>
+      dynamicColour(light: HexColor("#7B7B7B"), dark: HexColor("#000000"));
   Color get lightPurple =>
       dynamicColour(light: HexColor("#C785BA"), dark: HexColor("#000000"));
   Color get darkPurple =>
@@ -52,9 +55,14 @@ extension ColorUtil on BuildContext {
 
   Color get darkRed =>
       dynamicColour(light: HexColor("#9B0000"), dark: HexColor("#000000"));
+  Color get amazonBlue =>
+      dynamicColour(light: HexColor("#7195F3"), dark: HexColor("#000000"));
+  Color get darkblue =>
+      dynamicColour(light: HexColor("#1741AC"), dark: HexColor("#000000"));
   Color get lightRed =>
       dynamicColour(light: HexColor("#C600005C"), dark: HexColor("#000000"));
-
+  Color get bottomsheetbutton =>
+      dynamicColour(light: HexColor("#E1D4D9"), dark: HexColor("#000000"));
   Color get darkBrown =>
       dynamicColour(light: HexColor("#A66B00"), dark: HexColor("#000000"));
 

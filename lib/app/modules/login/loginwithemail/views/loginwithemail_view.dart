@@ -186,13 +186,17 @@ class emailLoginPage extends StatelessWidget {
               controller: controller.passwordController,
               svgPath: ImageConstant.svglock,
               obscureText: controller.obscureText.value,
-              suffixIcon: GestureDetector(
-                onTap: () {
-                  controller.obscureText.toggle();
-                },
-                child: CommonImageView(
-                  svgPath: ImageConstant.svgeyeslash,
-                ).paddingAll(16.kw),
+              suffixIcon: Obx(
+                () => GestureDetector(
+                  onTap: () {
+                    controller.obscureText.toggle();
+                  },
+                  child: CommonImageView(
+                    svgPath: controller.obscureText.value == true
+                        ? ImageConstant.svgeyeslash
+                        : ImageConstant.svgeyeopen,
+                  ).paddingAll(16.kw),
+                ),
               ),
             ),
           ),

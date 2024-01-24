@@ -37,6 +37,16 @@ class TextStyleUtil {
     );
   }
 
+  static TextStyle genSansTab500({
+    required double fontSize,
+  }) {
+    return TextStyle(
+      fontFamily: 'General Sans',
+      fontSize: fontSize,
+      fontWeight: FontWeight.w500,
+    );
+  }
+
   static TextStyle genSans600({
     Color color = Colors.black,
     required double fontSize,

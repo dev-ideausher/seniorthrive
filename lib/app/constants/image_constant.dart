@@ -9,8 +9,9 @@ class ImageConstant {
   static String svgphotocam = 'assets/images/photocam.svg';
   static String svglock = 'assets/images/lock.svg';
   static String svgeyeslash = 'assets/images/eye-slash.svg';
+  static String svgeyeopen = 'assets/images/eyeenabled.svg';
   static String svgcommunity = 'assets/images/community.svg';
-
+  static String svgemptyGallery = 'assets/images/emptyGallery.svg';
   static String svgnotification = 'assets/images/notification.svg';
   static String svgemail = 'assets/images/email.svg';
   static String svgemailfilled = 'assets/images/emailfilled.svg';
@@ -25,9 +26,14 @@ class ImageConstant {
   static String svgcalendar = 'assets/images/calendar.svg';
   static String svgscanmyhome = 'assets/images/scanmyhome.svg';
   static String svghelpfultips = 'assets/images/helpfultips.svg';
+  static String svgstar = 'assets/images/star.svg';
+  static String svgEllipse = 'assets/images/Ellipse.svg';
+  static String svgsearch = 'assets/images/search.svg';
 //PNGs
   static String pngLogo = 'assets/images/logo.png';
-
+  static String pngbedRoomCard = 'assets/images/bedRoomCard.png';
+  static String pngbathRoomCard = 'assets/images/bathRoomCard.png';
+  static String pngbathRoomTab = 'assets/images/bathroomTab.png';
   static String pngScore = 'assets/images/Score.png';
   static String pngsignIn = 'assets/images/signIn.png';
   static String pngshadowtick = 'assets/images/shadowtick.png';

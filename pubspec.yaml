@@ -59,8 +59,18 @@ dependencies:
   image_picker: ^1.0.7
   fk_toggle: ^0.1.4
   dropdown_button2: ^2.3.9
-  permission_handler: ^11.1.0
   camera: ^0.10.5+9
+  augmented_reality_plugin: ^4.0.1
+  permission_handler: ^11.1.0
+  sensors: ^2.0.3
+  path_provider: ^2.1.2
+  flutter_ffmpeg: ^0.4.2
+  carousel_slider: ^4.2.1
+  video_player: ^2.8.2
+  chewie: ^1.7.4
+  path: ^1.8.3
+  step_progress_indicator: ^1.0.2
+  group_button: ^5.3.4
 
 dev_dependencies:
   flutter_test:

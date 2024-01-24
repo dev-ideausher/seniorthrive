@@ -5,6 +5,10 @@ import '../modules/bottomnavigatorbar/views/bottomnavigatorbar_view.dart';
 import '../modules/community/bindings/community_binding.dart';
 import '../modules/community/views/community_view.dart';
 import '../modules/homepage/bindings/homepage_binding.dart';
+import '../modules/homepage/previewvideo/bindings/previewvideo_binding.dart';
+import '../modules/homepage/previewvideo/views/previewvideo_view.dart';
+import '../modules/homepage/scanresults/bindings/scanresults_binding.dart';
+import '../modules/homepage/scanresults/views/scanresults_view.dart';
 import '../modules/homepage/views/homepage_view.dart';
 import '../modules/login/createaccount/bindings/createaccount_binding.dart';
 import '../modules/login/createaccount/views/createaccount_view.dart';
@@ -91,6 +95,18 @@ class AppPages {
       name: _Paths.HOMEPAGE,
       page: () => const HomepageView(),
       binding: HomepageBinding(),
+      children: [
+        GetPage(
+          name: _Paths.PREVIEWVIDEO,
+          page: () => const PreviewvideoView(),
+          binding: PreviewvideoBinding(),
+        ),
+        GetPage(
+          name: _Paths.SCANRESULTS,
+          page: () => const ScanresultsView(),
+          binding: ScanresultsBinding(),
+        ),
+      ],
     ),
     GetPage(
       name: _Paths.RECOMMENDATIONS,

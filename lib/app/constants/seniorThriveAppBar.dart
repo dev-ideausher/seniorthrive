@@ -7,6 +7,7 @@ class seniorThriveAppBar extends StatelessWidget
   final Color? backgroundColor;
   final List<Widget>? actions;
   final Widget? leading;
+  final PreferredSizeWidget? bottom;
   final Widget? title;
   final bool? centerTitle;
   final bool? isleading;
@@ -17,12 +18,14 @@ class seniorThriveAppBar extends StatelessWidget
       this.title,
       this.centerTitle,
       this.backgroundColor,
-      this.isleading = true});
+      this.isleading = true,
+      this.bottom});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: backgroundColor,
+      bottom: bottom,
       actions: actions,
       leading: isleading!
           ? IconButton(

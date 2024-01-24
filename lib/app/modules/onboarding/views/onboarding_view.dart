@@ -88,6 +88,11 @@ class OnboardingView extends GetView<OnboardingController> {
                     text:
                         'Connect with others, share stories, and discover helpful tips. Together, we thrive as a community.',
                   ),
+                  ElevatedButton(
+                      onPressed: () {
+                        Get.toNamed(Routes.PREVIEWVIDEO);
+                      },
+                      child: Text('preview video'))
                 ],
               ),
             ),
