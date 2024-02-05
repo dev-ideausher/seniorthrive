@@ -22,6 +22,26 @@ abstract class Routes {
 
   static const PREVIEWVIDEO = _Paths.HOMEPAGE + _Paths.PREVIEWVIDEO;
   static const SCANRESULTS = _Paths.HOMEPAGE + _Paths.SCANRESULTS;
+
+  static const RECOMMENDEDMEASURES =
+      _Paths.RECOMMENDATIONS + _Paths.RECOMMENDEDMEASURES;
+  static const ACCESSIBLITY = _Paths.SETTINGS + _Paths.ACCESSIBLITY;
+  static const HEALTH_CONDITIONS_SETTINGS =
+      _Paths.SETTINGS + _Paths.HEALTH_CONDITIONS_SETTINGS;
+  static const THRIVESCORE = _Paths.SETTINGS + _Paths.THRIVESCORE;
+  static const SUBSCRIPTIONSETTINGS =
+      _Paths.SETTINGS + _Paths.SUBSCRIPTIONSETTINGS;
+  static const NOTIFICATIONSETTINGS =
+      _Paths.SETTINGS + _Paths.NOTIFICATIONSETTINGS;
+  static const HELPCENTER = _Paths.SETTINGS + _Paths.HELPCENTER;
+  static const FAQ = _Paths.SETTINGS + _Paths.FAQ;
+  static const CONTACTUS = _Paths.SETTINGS + _Paths.CONTACTUS;
+  static const TERMSOFUSE = _Paths.SETTINGS + _Paths.TERMSOFUSE;
+  static const PRIVACYPOLICY = _Paths.SETTINGS + _Paths.PRIVACYPOLICY;
+  static const RESETPASSWORDSETTING =
+      _Paths.SETTINGS + _Paths.RESETPASSWORDSETTING;
+  static const PERSONALINFORMATIONSETTINGS =
+      _Paths.SETTINGS + _Paths.PERSONALINFORMATIONSETTINGS;
 }
 
 abstract class _Paths {
@@ -44,4 +64,17 @@ abstract class _Paths {
   static const SETTINGS = '/settings';
   static const PREVIEWVIDEO = '/previewvideo';
   static const SCANRESULTS = '/scanresults';
+  static const RECOMMENDEDMEASURES = '/recommendedmeasures';
+  static const ACCESSIBLITY = '/accessiblity';
+  static const HEALTH_CONDITIONS_SETTINGS = '/health-conditions-settings';
+  static const THRIVESCORE = '/thrivescore';
+  static const SUBSCRIPTIONSETTINGS = '/subscriptionsettings';
+  static const NOTIFICATIONSETTINGS = '/notificationsettings';
+  static const HELPCENTER = '/helpcenter';
+  static const FAQ = '/faq';
+  static const CONTACTUS = '/contactus';
+  static const TERMSOFUSE = '/termsofuse';
+  static const PRIVACYPOLICY = '/privacypolicy';
+  static const RESETPASSWORDSETTING = '/resetpasswordsetting';
+  static const PERSONALINFORMATIONSETTINGS = '/personalinformationsettings';
 }

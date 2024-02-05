@@ -13,19 +13,20 @@ class seniorThriveTextField extends StatelessWidget {
   final Widget? suffixIcon;
   final Widget? prefixIcon;
   final String? hintText;
+  void Function(String)? onChanged;
   final TextStyle? hintStyle;
-  const seniorThriveTextField({
-    super.key,
-    this.controller,
-    this.svgPath,
-    this.imagePath,
-    this.obscureText = false,
-    this.suffixIcon,
-    this.validator,
-    this.hintText,
-    this.hintStyle,
-    this.prefixIcon,
-  });
+  seniorThriveTextField(
+      {super.key,
+      this.controller,
+      this.svgPath,
+      this.imagePath,
+      this.obscureText = false,
+      this.suffixIcon,
+      this.validator,
+      this.hintText,
+      this.hintStyle,
+      this.prefixIcon,
+      this.onChanged});
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +36,7 @@ class seniorThriveTextField extends StatelessWidget {
       style: TextStyleUtil.genSans400(fontSize: 16.kh, color: Colors.black),
       obscureText: obscureText,
       obscuringCharacter: '*',
+      onChanged: onChanged,
       decoration: InputDecoration(
           suffixIcon: suffixIcon,
           hintText: hintText,

@@ -20,15 +20,39 @@ import '../modules/login/loginwithemail/bindings/loginwithemail_binding.dart';
 import '../modules/login/loginwithemail/views/loginwithemail_view.dart';
 import '../modules/login/otpverification/bindings/otpverification_binding.dart';
 import '../modules/login/otpverification/views/otpverification_view.dart';
-import '../modules/login/resetpassword/bindings/resetpassword_binding.dart';
-import '../modules/login/resetpassword/views/resetpassword_view.dart';
 import '../modules/onboarding/bindings/onboarding_binding.dart';
 import '../modules/onboarding/views/onboarding_view.dart';
 import '../modules/profile/personalinforamtion/bindings/personalinforamtion_binding.dart';
 import '../modules/profile/personalinforamtion/views/personalinforamtion_view.dart';
 import '../modules/recommendations/bindings/recommendations_binding.dart';
+import '../modules/recommendations/recommendedmeasures/bindings/recommendedmeasures_binding.dart';
+import '../modules/recommendations/recommendedmeasures/views/recommendedmeasures_view.dart';
 import '../modules/recommendations/views/recommendations_view.dart';
+import '../modules/settings/accessiblity/bindings/accessiblity_binding.dart';
+import '../modules/settings/accessiblity/views/accessiblity_view.dart';
 import '../modules/settings/bindings/settings_binding.dart';
+import '../modules/settings/contactus/bindings/contactus_binding.dart';
+import '../modules/settings/contactus/views/contactus_view.dart';
+import '../modules/settings/faq/bindings/faq_binding.dart';
+import '../modules/settings/faq/views/faq_view.dart';
+import '../modules/settings/healthConditionsSettings/bindings/health_conditions_settings_binding.dart';
+import '../modules/settings/healthConditionsSettings/views/health_conditions_settings_view.dart';
+import '../modules/settings/helpcenter/bindings/helpcenter_binding.dart';
+import '../modules/settings/helpcenter/views/helpcenter_view.dart';
+import '../modules/settings/notificationsettings/bindings/notificationsettings_binding.dart';
+import '../modules/settings/notificationsettings/views/notificationsettings_view.dart';
+import '../modules/settings/personalinformationsettings/bindings/personalinformationsettings_binding.dart';
+import '../modules/settings/personalinformationsettings/views/personalinformationsettings_view.dart';
+import '../modules/settings/privacypolicy/bindings/privacypolicy_binding.dart';
+import '../modules/settings/privacypolicy/views/privacypolicy_view.dart';
+import '../modules/settings/resetpasswordsetting/bindings/resetpasswordsetting_binding.dart';
+import '../modules/settings/resetpasswordsetting/views/resetpasswordsetting_view.dart';
+import '../modules/settings/subscriptionsettings/bindings/subscriptionsettings_binding.dart';
+import '../modules/settings/subscriptionsettings/views/subscriptionsettings_view.dart';
+import '../modules/settings/termsofuse/bindings/termsofuse_binding.dart';
+import '../modules/settings/termsofuse/views/termsofuse_view.dart';
+import '../modules/settings/thrivescore/bindings/thrivescore_binding.dart';
+import '../modules/settings/thrivescore/views/thrivescore_view.dart';
 import '../modules/settings/views/settings_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
@@ -77,11 +101,6 @@ class AppPages {
       binding: ForgotpasswordBinding(),
     ),
     GetPage(
-      name: _Paths.RESETPASSWORD,
-      page: () => const ResetpasswordView(),
-      binding: ResetpasswordBinding(),
-    ),
-    GetPage(
       name: _Paths.BOTTOMNAVIGATORBAR,
       page: () => const BottomnavigatorbarView(),
       binding: BottomnavigatorbarBinding(),
@@ -112,6 +131,13 @@ class AppPages {
       name: _Paths.RECOMMENDATIONS,
       page: () => const RecommendationsView(),
       binding: RecommendationsBinding(),
+      children: [
+        GetPage(
+          name: _Paths.RECOMMENDEDMEASURES,
+          page: () => const RecommendedmeasuresView(),
+          binding: RecommendedmeasuresBinding(),
+        ),
+      ],
     ),
     GetPage(
       name: _Paths.COMMUNITY,
@@ -122,6 +148,68 @@ class AppPages {
       name: _Paths.SETTINGS,
       page: () => const SettingsView(),
       binding: SettingsBinding(),
+      children: [
+        GetPage(
+          name: _Paths.ACCESSIBLITY,
+          page: () => const AccessiblityView(),
+          binding: AccessiblityBinding(),
+        ),
+        GetPage(
+          name: _Paths.HEALTH_CONDITIONS_SETTINGS,
+          page: () => const HealthConditionsSettingsView(),
+          binding: HealthConditionsSettingsBinding(),
+        ),
+        GetPage(
+          name: _Paths.THRIVESCORE,
+          page: () => const ThrivescoreView(),
+          binding: ThrivescoreBinding(),
+        ),
+        GetPage(
+          name: _Paths.SUBSCRIPTIONSETTINGS,
+          page: () => const SubscriptionsettingsView(),
+          binding: SubscriptionsettingsBinding(),
+        ),
+        GetPage(
+          name: _Paths.NOTIFICATIONSETTINGS,
+          page: () => const NotificationsettingsView(),
+          binding: NotificationsettingsBinding(),
+        ),
+        GetPage(
+          name: _Paths.HELPCENTER,
+          page: () => const HelpcenterView(),
+          binding: HelpcenterBinding(),
+        ),
+        GetPage(
+          name: _Paths.FAQ,
+          page: () => const FaqView(),
+          binding: FaqBinding(),
+        ),
+        GetPage(
+          name: _Paths.CONTACTUS,
+          page: () => const ContactusView(),
+          binding: ContactusBinding(),
+        ),
+        GetPage(
+          name: _Paths.TERMSOFUSE,
+          page: () => const TermsofuseView(),
+          binding: TermsofuseBinding(),
+        ),
+        GetPage(
+          name: _Paths.PRIVACYPOLICY,
+          page: () => const PrivacypolicyView(),
+          binding: PrivacypolicyBinding(),
+        ),
+        GetPage(
+          name: _Paths.RESETPASSWORDSETTING,
+          page: () => const ResetpasswordsettingView(),
+          binding: ResetpasswordsettingBinding(),
+        ),
+        GetPage(
+          name: _Paths.PERSONALINFORMATIONSETTINGS,
+          page: () => const PersonalinformationsettingsView(),
+          binding: PersonalinformationsettingsBinding(),
+        ),
+      ],
     ),
   ];
 }

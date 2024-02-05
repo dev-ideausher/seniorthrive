@@ -18,6 +18,8 @@ extension ColorUtil on BuildContext {
 
   Color get green =>
       dynamicColour(light: HexColor("#76C554"), dark: HexColor("#000000"));
+  Color get greenSwitch =>
+      dynamicColour(light: HexColor("#27AE60"), dark: HexColor("#000000"));
   Color get olivegreen =>
       dynamicColour(light: HexColor("#71974C"), dark: HexColor("#000000"));
   Color get grey =>
@@ -71,4 +73,6 @@ extension ColorUtil on BuildContext {
 
   Color get orange =>
       dynamicColour(light: HexColor("#F0893F"), dark: HexColor("#000000"));
+  Color get greyBackGround =>
+      dynamicColour(light: HexColor("#EFF0F2"), dark: HexColor("#000000"));
 }

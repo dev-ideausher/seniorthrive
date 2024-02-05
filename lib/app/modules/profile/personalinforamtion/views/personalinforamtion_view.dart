@@ -300,7 +300,7 @@ class chronicConditionDropDown extends StatelessWidget {
           style: TextStyleUtil.genSans400(fontSize: 16.kh, color: context.grey),
         ),
         selectedItemBuilder: (context) {
-          return controller.items.map(
+          return controller.chronicDiesease.map(
             (item) {
               return Container(
                 alignment: AlignmentDirectional.center,
@@ -319,7 +319,7 @@ class chronicConditionDropDown extends StatelessWidget {
         value: controller.selectedItems.isEmpty
             ? null
             : controller.selectedItems.last,
-        items: controller.items.map((String item) {
+        items: controller.chronicDiesease.map((String item) {
           return DropdownMenuItem<String>(
             value: item,
             child: Obx(
@@ -414,6 +414,8 @@ class createProfilePage extends StatelessWidget {
           ),
           seniorThriveTextField(
             hintText: 'Full Name',
+            controller: controller.nameController,
+            onChanged: (value) => controller.name.value = value,
             hintStyle: TextStyleUtil.genSans400(fontSize: 16.kh),
           ).paddingOnly(top: 4.kh, bottom: 16.kh),
           Text(
@@ -447,7 +449,7 @@ class createProfilePage extends StatelessWidget {
                       enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: context.grey),
                           borderRadius: BorderRadius.circular(16.kw))),
-                  items: [
+                  items: const [
                     DropdownMenuItem(
                       child: Text('Male'),
                       value: 0,
