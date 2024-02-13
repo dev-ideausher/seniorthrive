@@ -27,6 +27,8 @@ extension ColorUtil on BuildContext {
 
   Color get darkgrey =>
       dynamicColour(light: HexColor("#686868"), dark: HexColor("#000000"));
+  Color get textFieldBordergrey =>
+      dynamicColour(light: HexColor("#D2D2D2"), dark: HexColor("#000000"));
   Color get indicatorgrey =>
       dynamicColour(light: HexColor("#C4C4C4"), dark: HexColor("#000000"));
   Color get lightgrey =>
@@ -40,6 +42,8 @@ extension ColorUtil on BuildContext {
 
   Color get blue =>
       dynamicColour(light: HexColor("#3662D4"), dark: HexColor("#000000"));
+  Color get primarygrey =>
+      dynamicColour(light: HexColor("#E2E2E2"), dark: HexColor("#000000"));
   Color get lightblue =>
       dynamicColour(light: HexColor("#EFF3FF"), dark: HexColor("#000000"));
   Color get pink =>

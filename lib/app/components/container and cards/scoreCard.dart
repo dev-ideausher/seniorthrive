@@ -1,3 +1,4 @@
+import 'package:capped_progress_indicator/capped_progress_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -124,6 +125,81 @@ class pointsEarnedContainer extends StatelessWidget {
                   fontSize: 12.kh, color: textcolor ?? Colors.white))
         ],
       ).paddingAll(5.kw),
+    );
+  }
+}
+
+class pointsCard extends StatelessWidget {
+  const pointsCard({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+          color: Colors.white, borderRadius: BorderRadius.circular(16.kw)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text("Your Thrive Score",
+                  style: TextStyleUtil.genSans800(
+                    fontSize: 16.kh,
+                  )),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Row(
+                    children: [
+                      CommonImageView(
+                        imagePath: ImageConstant.pngScoreicon,
+                      ),
+                      Text("40",
+                          style: TextStyleUtil.genSans800(
+                            fontSize: 16.kh,
+                          )),
+                    ],
+                  ),
+                  Text("ThrivePoints History",
+                      style: TextStyleUtil.genSans500(
+                          fontSize: 12.kh, color: context.greyText)),
+                ],
+              )
+            ],
+          ).paddingOnly(left: 16.kw, right: 16.kw, top: 16.kh),
+          Column(
+            children: [
+              LinearCappedProgressIndicator(
+                value: 0.5,
+                cornerRadius: 8,
+                minHeight: 8.kh,
+                valueColor: AlwaysStoppedAnimation<Color>(context.blue),
+                backgroundColor: context.primarygrey,
+              ).paddingOnly(top: 8.kh, bottom: 8.kh),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Progressing",
+                      style: TextStyleUtil.genSans400(
+                        fontSize: 12.kh,
+                      )),
+                  Text("Evolving",
+                      style: TextStyleUtil.genSans400(
+                        fontSize: 12.kh,
+                      )),
+                  Text("Advancing",
+                      style: TextStyleUtil.genSans400(
+                        fontSize: 12.kh,
+                      )),
+                ],
+              )
+            ],
+          ).paddingOnly(left: 16.kw, right: 16.kw, bottom: 16.kh),
+        ],
+      ),
     );
   }
 }

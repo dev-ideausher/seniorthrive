@@ -13,6 +13,7 @@ class seniorThriveTextField extends StatelessWidget {
   final Widget? suffixIcon;
   final Widget? prefixIcon;
   final String? hintText;
+  final int? maxLines;
   void Function(String)? onChanged;
   final TextStyle? hintStyle;
   seniorThriveTextField(
@@ -26,7 +27,8 @@ class seniorThriveTextField extends StatelessWidget {
       this.hintText,
       this.hintStyle,
       this.prefixIcon,
-      this.onChanged});
+      this.onChanged,
+      this.maxLines});
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +39,7 @@ class seniorThriveTextField extends StatelessWidget {
       obscureText: obscureText,
       obscuringCharacter: '*',
       onChanged: onChanged,
+      maxLines: maxLines ?? 1,
       decoration: InputDecoration(
           suffixIcon: suffixIcon,
           hintText: hintText,

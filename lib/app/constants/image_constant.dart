@@ -4,7 +4,7 @@ class ImageConstant {
   static String svgfacebook = 'assets/images/facebook.svg';
   static String svgapple = 'assets/images/apple.svg';
   static String svghomelogo = 'assets/images/homelogo.svg';
-
+  static String svgcomments = 'assets/images/comment.svg';
   static String svgvideocam = 'assets/images/videocam.svg';
   static String svgphotocam = 'assets/images/photocam.svg';
   static String svglock = 'assets/images/lock.svg';
@@ -12,7 +12,7 @@ class ImageConstant {
   static String svgeyeopen = 'assets/images/eyeenabled.svg';
   static String svgcommunity = 'assets/images/community.svg';
   static String svgplay = 'assets/images/play.svg';
-
+  static String svgread = 'assets/images/read.svg';
   static String svgemptyGallery = 'assets/images/emptyGallery.svg';
   static String svgnotification = 'assets/images/notification.svg';
   static String svgemail = 'assets/images/email.svg';
@@ -39,6 +39,7 @@ class ImageConstant {
   static String svghelpCenter = 'assets/images/helpCenter.svg';
   static String svgmultiplePerson = 'assets/images/multiplePerson.svg';
   static String svgfaq = 'assets/images/faq.svg';
+  static String svgsearchnormal = 'assets/images/searchnormal.svg';
   static String svgsettings = 'assets/images/settings.svg';
 
 //PNGs

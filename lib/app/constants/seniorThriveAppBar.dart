@@ -11,6 +11,7 @@ class seniorThriveAppBar extends StatelessWidget
   final Widget? title;
   final bool? centerTitle;
   final bool? isleading;
+  final Color? iconcolor;
   const seniorThriveAppBar(
       {super.key,
       this.actions,
@@ -19,7 +20,8 @@ class seniorThriveAppBar extends StatelessWidget
       this.centerTitle,
       this.backgroundColor,
       this.isleading = true,
-      this.bottom});
+      this.bottom,
+      this.iconcolor});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +36,7 @@ class seniorThriveAppBar extends StatelessWidget
               },
               icon: Icon(
                 CupertinoIcons.chevron_back,
-                color: Colors.black,
+                color: iconcolor ?? Colors.black,
               ))
           : leading,
       title: title,

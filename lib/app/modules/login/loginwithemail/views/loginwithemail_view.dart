@@ -185,6 +185,7 @@ class emailLoginPage extends StatelessWidget {
             () => seniorThriveTextField(
               controller: controller.passwordController,
               svgPath: ImageConstant.svglock,
+              maxLines: 1,
               obscureText: controller.obscureText.value,
               suffixIcon: Obx(
                 () => GestureDetector(

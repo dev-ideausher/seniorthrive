@@ -9,6 +9,7 @@ class AccessiblityController extends GetxController {
   RxBool switchValue = false.obs;
   RxDouble volume = 0.0.obs; // Set an initial value for volume
   final FlutterTts flutterTts = FlutterTts();
+  RxDouble fontSize = 1.0.obs;
   @override
   void onInit() {
     super.onInit();

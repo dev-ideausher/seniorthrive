@@ -4,6 +4,8 @@ class NotificationsettingsController extends GetxController {
   //TODO: Implement NotificationsettingsController
 
   final count = 0.obs;
+  RxBool notificationSwitchValue = false.obs;
+  RxBool alertSwitchValue = false.obs;
   @override
   void onInit() {
     super.onInit();

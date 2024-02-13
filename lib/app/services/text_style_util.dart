@@ -48,7 +48,7 @@ class TextStyleUtil {
   }
 
   static TextStyle genSans600({
-    Color color = Colors.black,
+    Color? color,
     required double fontSize,
   }) {
     return TextStyle(
